@@ -3,7 +3,7 @@ namespace DarkSoulsSiteMVC.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class InitializeLocalDB : DbMigration
+    public partial class AddedYacto : DbMigration
     {
         public override void Up()
         {

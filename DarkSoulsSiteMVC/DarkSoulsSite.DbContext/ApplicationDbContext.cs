@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace DarkSoulsSite.DbContext
 {
-    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
+    public class ApplicationDbContext : IdentityDbContext<User>
     {
         public ApplicationDbContext()
             : base("DarkSoulsSiteConnection", throwIfV1Schema: false)

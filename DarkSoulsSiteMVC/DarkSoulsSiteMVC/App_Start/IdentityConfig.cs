@@ -11,6 +11,8 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using DarkSoulsSiteMVC.Models;
+using DarkSoulsSite.Entities;
+using DarkSoulsSite.DbContext;
 
 namespace DarkSoulsSiteMVC
 {

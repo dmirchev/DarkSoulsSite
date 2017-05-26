@@ -6,6 +6,8 @@ using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.Google;
 using Owin;
 using DarkSoulsSiteMVC.Models;
+using DarkSoulsSite.DbContext;
+using DarkSoulsSite.Entities;
 
 namespace DarkSoulsSiteMVC
 {

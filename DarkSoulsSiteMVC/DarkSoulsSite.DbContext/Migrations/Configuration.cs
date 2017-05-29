@@ -25,9 +25,9 @@ namespace DarkSoulsSite.DbContext.Migrations
                 Initializer.SeedUser(context);
             }
 
-            Initializer.SeedCharacters(context);
-            Initializer.SeedItems(context);
-            Initializer.SeedBosses(context);
+            //Initializer.SeedCharacters(context);
+            //Initializer.SeedItems(context);
+            //Initializer.SeedBosses(context);
         }
     }
 }

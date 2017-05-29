@@ -21,6 +21,6 @@ namespace DarkSoulsSite.Entities.Common
 
         public BaseEntity() { }
 
-        public BaseEntity(string name, int level, CustonId)
+        //public BaseEntity(string name, int level, CustonId)
     }
 }

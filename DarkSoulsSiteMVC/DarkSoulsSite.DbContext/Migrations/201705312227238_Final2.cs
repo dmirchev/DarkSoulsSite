@@ -3,7 +3,7 @@ namespace DarkSoulsSite.DbContext.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Bosses : DbMigration
+    public partial class Final2 : DbMigration
     {
         public override void Up()
         {
@@ -12,12 +12,13 @@ namespace DarkSoulsSite.DbContext.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        BaseArmor = c.String(nullable: false),
-                        FireDefense = c.String(),
-                        MagicDefense = c.String(),
-                        LightningDefense = c.String(),
+                        BaseArmor = c.Int(nullable: false),
+                        FireDefense = c.Int(nullable: false),
+                        IceDefense = c.Int(nullable: false),
+                        LightningDefense = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 255),
                         Level = c.Int(nullable: false),
+                        Image = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -26,13 +27,18 @@ namespace DarkSoulsSite.DbContext.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        BaseDamage = c.String(nullable: false),
-                        BaseArmor = c.String(nullable: false),
-                        FireDefense = c.String(),
-                        MagicDefense = c.String(),
-                        LightningDefense = c.String(),
+                        BaseDamage = c.Int(nullable: false),
+                        BaseArmor = c.Int(nullable: false),
+                        FireDefense = c.Int(nullable: false),
+                        IceDefense = c.Int(nullable: false),
+                        LightningDefense = c.Int(nullable: false),
+                        BleedDefence = c.Boolean(nullable: false),
+                        BleedPoison = c.Boolean(nullable: false),
+                        Reward = c.String(),
+                        Rating = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 255),
                         Level = c.Int(nullable: false),
+                        Image = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -47,6 +53,7 @@ namespace DarkSoulsSite.DbContext.Migrations
                         MagicId = c.String(nullable: false, maxLength: 128),
                         Name = c.String(nullable: false, maxLength: 255),
                         Level = c.Int(nullable: false),
+                        Image = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Armors", t => t.ArmorId, cascadeDelete: true)
@@ -63,12 +70,13 @@ namespace DarkSoulsSite.DbContext.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        BaseMagic = c.String(nullable: false),
-                        FireMagic = c.String(),
-                        MagicMagic = c.String(),
-                        LightningMagic = c.String(),
+                        BaseMagic = c.Int(nullable: false),
+                        Fire = c.Int(nullable: false),
+                        Ice = c.Int(nullable: false),
+                        Lightning = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 255),
                         Level = c.Int(nullable: false),
+                        Image = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             
@@ -135,12 +143,12 @@ namespace DarkSoulsSite.DbContext.Migrations
                 c => new
                     {
                         Id = c.String(nullable: false, maxLength: 128),
-                        BaseDamage = c.String(nullable: false),
-                        FireDamage = c.String(),
-                        MagicDamage = c.String(),
-                        LightningDamage = c.String(),
+                        BaseDamage = c.Int(nullable: false),
+                        Bleed = c.Boolean(nullable: false),
+                        Poison = c.Boolean(nullable: false),
                         Name = c.String(nullable: false, maxLength: 255),
                         Level = c.Int(nullable: false),
+                        Image = c.String(nullable: false),
                     })
                 .PrimaryKey(t => t.Id);
             

@@ -12,18 +12,23 @@ namespace DarkSoulsSite.Entities.Items
     public class Armor : BaseEntity
     {
         [Required]
-        public string BaseArmor { get; set; }
-        public string FireDefense { get; set; }
-        public string MagicDefense { get; set; }
-        public string LightningDefense { get; set; }
+        public int BaseArmor { get; set; }
+        public int FireDefense { get; set; }
+        public int IceDefense { get; set; }
+        public int LightningDefense { get; set; }
 
-        public Armor(string baseArmor, string fireDefense, string magicDefense, string lightningDefense,
-            string name, int level, CustomId id)
-            : base(name, level, id)
+        public Armor()
+        {
+
+        }
+
+        public Armor(int baseArmor, int fireDefense, int iceDefense, int lightningDefense,
+            string name, int level, string image, CustomId id)
+            : base(name, level, image, id)
         {
             this.BaseArmor = baseArmor;
             this.FireDefense = fireDefense;
-            this.MagicDefense = magicDefense;
+            this.IceDefense = iceDefense;
             this.LightningDefense = lightningDefense;
         }
     }

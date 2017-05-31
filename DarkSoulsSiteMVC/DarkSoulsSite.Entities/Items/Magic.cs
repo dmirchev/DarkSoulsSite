@@ -12,19 +12,24 @@ namespace DarkSoulsSite.Entities.Items
     public class Magic : BaseEntity
     {
         [Required]
-        public string BaseMagic { get; set; }
-        public string FireMagic { get; set; }
-        public string MagicMagic { get; set; }
-        public string LightningMagic { get; set; }
+        public int BaseMagic { get; set; }
+        public int Fire { get; set; }
+        public int Ice { get; set; }
+        public int Lightning { get; set; }
 
-        public Magic(string baseMagic, string fireMagic, string magicMagic, string lightningMagic,
-            string name, int level, CustomId id)
-            : base(name, level, id)
+        public Magic()
+        {
+
+        }
+
+        public Magic(int baseMagic, int fire, int ice, int lightning,
+            string name, int level, string image, CustomId id)
+            : base(name, level, image, id)
         {
             this.BaseMagic = baseMagic;
-            this.FireMagic = fireMagic;
-            this.MagicMagic = magicMagic;
-            this.LightningMagic = lightningMagic;
+            this.Fire = fire;
+            this.Ice = ice;
+            this.Lightning = lightning;
         }
     }
 }

@@ -189,8 +189,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CharactersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ItemControllers\ArmorsController.cs" />
+    <Compile Include="Controllers\ItemControllers\MagicsController.cs" />
+    <Compile Include="Controllers\ItemControllers\WeaponsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="DTOs\ArmorEntry.cs" />
+    <Compile Include="DTOs\CharacterEntry.cs" />
+    <Compile Include="DTOs\MagicEntry.cs" />
+    <Compile Include="DTOs\WeaponEntry.cs" />
     <Compile Include="Entity\BaseItems.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -259,6 +267,26 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Characters\Create.cshtml" />
+    <Content Include="Views\Characters\Delete.cshtml" />
+    <Content Include="Views\Characters\Details.cshtml" />
+    <Content Include="Views\Characters\Edit.cshtml" />
+    <Content Include="Views\Characters\Index.cshtml" />
+    <Content Include="Views\Armors\Create.cshtml" />
+    <Content Include="Views\Armors\Delete.cshtml" />
+    <Content Include="Views\Armors\Details.cshtml" />
+    <Content Include="Views\Armors\Edit.cshtml" />
+    <Content Include="Views\Armors\Index.cshtml" />
+    <Content Include="Views\Weapons\Create.cshtml" />
+    <Content Include="Views\Weapons\Delete.cshtml" />
+    <Content Include="Views\Weapons\Details.cshtml" />
+    <Content Include="Views\Weapons\Edit.cshtml" />
+    <Content Include="Views\Weapons\Index.cshtml" />
+    <Content Include="Views\Magics\Create.cshtml" />
+    <Content Include="Views\Magics\Delete.cshtml" />
+    <Content Include="Views\Magics\Details.cshtml" />
+    <Content Include="Views\Magics\Edit.cshtml" />
+    <Content Include="Views\Magics\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -279,6 +307,10 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DarkSoulsSite.Common\DarkSoulsSite.Common.csproj">
+      <Project>{5FE73B27-1E5E-46CB-8CF7-A5AFE66ACEBE}</Project>
+      <Name>DarkSoulsSite.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DarkSoulsSite.DbContext\DarkSoulsSite.DbContext.csproj">
       <Project>{27850587-e3d1-4a8c-bc47-4cb3749dbe5c}</Project>
       <Name>DarkSoulsSite.DbContext</Name>

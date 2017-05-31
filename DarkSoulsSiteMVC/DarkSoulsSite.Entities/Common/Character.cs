@@ -27,9 +27,14 @@ namespace DarkSoulsSite.Entities.Common
         public string MagicId { get; set; }
         public virtual Magic Magic { get; set; }
 
+        public Character()
+        {
+
+        }
+
         public Character(string userid, string weaponid, string armorid, string magicid,
-            string name, int level, CustomId id)
-            : base(name, level, id)
+            string name, int level, string image, CustomId id)
+            : base(name, level, image, id)
         {
             this.UserId = userid;
             this.WeaponId = weaponid;

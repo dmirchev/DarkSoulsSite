@@ -75,9 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201705311824183_Bosses.cs" />
-    <Compile Include="Migrations\201705311824183_Bosses.Designer.cs">
-      <DependentUpon>201705311824183_Bosses.cs</DependentUpon>
+    <Compile Include="Migrations\201705312227238_Final2.cs" />
+    <Compile Include="Migrations\201705312227238_Final2.Designer.cs">
+      <DependentUpon>201705312227238_Final2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Initializer.cs" />
@@ -94,8 +94,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705311824183_Bosses.resx">
-      <DependentUpon>201705311824183_Bosses.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201705312227238_Final2.resx">
+      <DependentUpon>201705312227238_Final2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -12,19 +12,22 @@ namespace DarkSoulsSite.Entities.Items
     public class Weapon : BaseEntity
     {
         [Required]
-        public string BaseDamage { get; set; }
-        public string FireDamage { get; set; }
-        public string MagicDamage { get; set; }
-        public string LightningDamage { get; set; }
+        public int BaseDamage { get; set; }
+        public bool Bleed { get; set; }
+        public bool Poison { get; set; }
 
-        public Weapon(string baseDamage, string fireDamage, string magicDamage, string lightningDamage,
-            string name, int level, CustomId id)
-            : base(name, level, id)
+        public Weapon()
+        {
+
+        }
+
+        public Weapon(int baseDamage, bool bleed, bool poison,
+            string name, int level, string image, CustomId id)
+            : base(name, level, image, id)
         {
             this.BaseDamage = baseDamage;
-            this.FireDamage = fireDamage;
-            this.MagicDamage = magicDamage;
-            this.LightningDamage = lightningDamage;
+            this.Bleed = bleed;
+            this.Poison = poison;
         }
     }
 }

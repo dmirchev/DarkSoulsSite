@@ -280,7 +280,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DarkSoulsSite.DbContext\DarkSoulsSite.DbContext.csproj">
-      <Project>{D1CBAB65-BDC8-4E28-8C2B-3D1AA5248073}</Project>
+      <Project>{27850587-e3d1-4a8c-bc47-4cb3749dbe5c}</Project>
       <Name>DarkSoulsSite.DbContext</Name>
     </ProjectReference>
     <ProjectReference Include="..\DarkSoulsSite.Entities\DarkSoulsSite.Entities.csproj">

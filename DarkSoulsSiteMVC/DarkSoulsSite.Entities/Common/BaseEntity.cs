@@ -1,13 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using DarkSoulsSite.Common;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using DarkSoulsSite.Common.Extensions;
 
 namespace DarkSoulsSite.Entities.Common
 {
-    class BaseEntity
+    public class BaseEntity
     {
         [Key]
         public string Id { get; set; }
@@ -21,6 +23,16 @@ namespace DarkSoulsSite.Entities.Common
 
         public BaseEntity() { }
 
-        //public BaseEntity(string name, int level, CustonId)
+        public BaseEntity(string name, int level, CustomId id = null)
+            : this(id)
+        {
+            this.Name = name;
+            this.Level = level;
+        }
+
+        public BaseEntity(CustomId id)
+        {
+            this.Id = string.IsNullOrEmpty(Convert.ToString(id)) ? new CustomId().ToString() : id.ToString();
+        }
     }
 }

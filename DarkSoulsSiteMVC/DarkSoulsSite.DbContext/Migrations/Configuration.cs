@@ -13,21 +13,21 @@ namespace DarkSoulsSite.DbContext.Migrations
             AutomaticMigrationDataLossAllowed = false;
         }
 
-        protected override void Seed(ApplicationDbContext context)
-        {
-            if (context.Roles.Any())
-            {
-                Initializer.SeedRoles(context);
-            }
+        //protected override void Seed(ApplicationDbContext context)
+        //{
+        //    if (context.Roles.Any())
+        //    {
+        //        Initializer.SeedRoles(context);
+        //    }
 
-            if (!context.Users.Any())
-            {
-                Initializer.SeedUser(context);
-            }
+        //    if (!context.Users.Any())
+        //    {
+        //        Initializer.SeedUser(context);
+        //    }
 
-            //Initializer.SeedCharacters(context);
-            //Initializer.SeedItems(context);
-            //Initializer.SeedBosses(context);
-        }
+        //    //Initializer.SeedCharacters(context);
+        //    //Initializer.SeedItems(context);
+        //    //Initializer.SeedBosses(context);
+        //}
     }
 }

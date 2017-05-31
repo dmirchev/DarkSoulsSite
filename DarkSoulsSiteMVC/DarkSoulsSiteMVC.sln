@@ -1,17 +1,17 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSiteMVC", "DarkSoulsSiteMVC\DarkSoulsSiteMVC.csproj", "{6EECB63A-D404-43AF-87B3-B8B1905B8A61}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.DbContext", "DarkSoulsSite.DbContext\DarkSoulsSite.DbContext.csproj", "{D1CBAB65-BDC8-4E28-8C2B-3D1AA5248073}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.Entities", "DarkSoulsSite.Entities\DarkSoulsSite.Entities.csproj", "{2D911781-68E5-4C15-9764-B19AB41E2C98}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.Common", "DarkSoulsSite.Common\DarkSoulsSite.Common.csproj", "{5FE73B27-1E5E-46CB-8CF7-A5AFE66ACEBE}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.ConsoleClient", "DarkSoulsSite.ConsoleClient\DarkSoulsSite.ConsoleClient.csproj", "{6DF60C35-D981-436D-9614-1A0096F126EB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.DbContext", "DarkSoulsSite.DbContext\DarkSoulsSite.DbContext.csproj", "{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,6 @@ Global
 		{6EECB63A-D404-43AF-87B3-B8B1905B8A61}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6EECB63A-D404-43AF-87B3-B8B1905B8A61}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6EECB63A-D404-43AF-87B3-B8B1905B8A61}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D1CBAB65-BDC8-4E28-8C2B-3D1AA5248073}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D1CBAB65-BDC8-4E28-8C2B-3D1AA5248073}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D1CBAB65-BDC8-4E28-8C2B-3D1AA5248073}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D1CBAB65-BDC8-4E28-8C2B-3D1AA5248073}.Release|Any CPU.Build.0 = Release|Any CPU
 		{2D911781-68E5-4C15-9764-B19AB41E2C98}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{2D911781-68E5-4C15-9764-B19AB41E2C98}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2D911781-68E5-4C15-9764-B19AB41E2C98}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -39,6 +35,10 @@ Global
 		{6DF60C35-D981-436D-9614-1A0096F126EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6DF60C35-D981-436D-9614-1A0096F126EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6DF60C35-D981-436D-9614-1A0096F126EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

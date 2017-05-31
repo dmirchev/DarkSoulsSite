@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DarkSoulsSite.Common.Extensions
 {
-    class CustomId
+    public class CustomId
     {
         private readonly Guid _id;
 

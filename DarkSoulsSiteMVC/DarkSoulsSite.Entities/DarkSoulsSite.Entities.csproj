@@ -75,13 +75,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Common\BaseEntity.cs" />
+    <Compile Include="Common\Boss.cs" />
     <Compile Include="Common\Character.cs" />
+    <Compile Include="DarkSouls.cs" />
+    <Compile Include="Items\Armor.cs" />
+    <Compile Include="Items\Magic.cs" />
+    <Compile Include="Items\Weapon.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DarkSoulsSite.Common\DarkSoulsSite.Common.csproj">
+      <Project>{5fe73b27-1e5e-46cb-8cf7-a5afe66acebe}</Project>
+      <Name>DarkSoulsSite.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

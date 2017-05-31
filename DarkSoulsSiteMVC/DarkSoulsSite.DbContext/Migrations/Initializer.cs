@@ -1,7 +1,10 @@
 ﻿using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace DarkSoulsSite.DbContext.Migrations
 {
@@ -18,7 +21,7 @@ namespace DarkSoulsSite.DbContext.Migrations
                 "Guest"
             };
 
-            foreach(var role in roles)
+            foreach (var role in roles)
             {
                 var roleStore = new RoleManager<IdentityRole>(new RoleStore<IdentityRole>(context));
 
@@ -29,9 +32,14 @@ namespace DarkSoulsSite.DbContext.Migrations
             }
         }
 
-        internal static void SeedUser(ApplicationDbContext context)
-        {
-            throw new NotImplementedException();
-        }
+        //internal static void SeedCharacters(ApplicationDbContext context)
+        //{
+        //    throw new NotImplementedException();
+        //}
+
+        //internal static void SeedUser(ApplicationDbContext context)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }

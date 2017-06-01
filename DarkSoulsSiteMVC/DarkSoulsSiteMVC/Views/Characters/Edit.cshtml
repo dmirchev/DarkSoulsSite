@@ -17,16 +17,16 @@
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
         @Html.HiddenFor(model => model.Id)
 
-        <div class="form-group">
+        @*<div class="form-group">
             @Html.LabelFor(model => model.UserId, "UserId", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("UserId", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.UserId, "", new { @class = "text-danger" })
             </div>
-        </div>
+        </div>*@
 
         <div class="form-group">
-            @Html.LabelFor(model => model.WeaponId, "WeaponId", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.WeaponId, "Weapon", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("WeaponId", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.WeaponId, "", new { @class = "text-danger" })
@@ -34,7 +34,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.ArmorId, "ArmorId", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.ArmorId, "Armor", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("ArmorId", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.ArmorId, "", new { @class = "text-danger" })
@@ -42,7 +42,7 @@
         </div>
 
         <div class="form-group">
-            @Html.LabelFor(model => model.MagicId, "MagicId", htmlAttributes: new { @class = "control-label col-md-2" })
+            @Html.LabelFor(model => model.MagicId, "Magic", htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @Html.DropDownList("MagicId", null, htmlAttributes: new { @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.MagicId, "", new { @class = "text-danger" })

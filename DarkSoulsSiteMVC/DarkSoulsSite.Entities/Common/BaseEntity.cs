@@ -18,15 +18,11 @@ namespace DarkSoulsSite.Entities.Common
         [StringLength(255)]
         public string Name { get; set; }
 
-       
-
         [Required]
         public int Level { get; set; }
 
         [Required]
         public string Image { get; set; }
-
-
 
         public BaseEntity() { }
 

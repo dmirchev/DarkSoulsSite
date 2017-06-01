@@ -26,10 +26,10 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     @if (Context.User.Identity.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("Characters", "Create", "Characters")</li>
-                        <li>@Html.ActionLink("Weapons", "Create", "Weapons")</li>
-                        <li>@Html.ActionLink("Armors", "Create", "Armors")</li>
-                        <li>@Html.ActionLink("Magics", "Create", "Magics")</li>
+                        <li>@Html.ActionLink("Characters", "Index", "Characters")</li>
+                        <li>@Html.ActionLink("Weapons", "Index", "Weapons")</li>
+                        <li>@Html.ActionLink("Armors", "Index", "Armors")</li>
+                        <li>@Html.ActionLink("Magics", "Index", "Magics")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")

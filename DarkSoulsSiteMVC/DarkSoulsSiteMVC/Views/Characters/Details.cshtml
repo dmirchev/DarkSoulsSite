@@ -11,38 +11,6 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.Armor.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Armor.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Magic.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Magic.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.User.Email)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.User.Email)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Weapon.Name)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Weapon.Name)
-        </dd>
-
-        <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
 
@@ -59,11 +27,45 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.Weapon)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Weapon.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Armor)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Armor.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Magic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Magic.Name)
+        </dd>
+
+        @*<dt>
+            @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>*@
+
+
+        <dt>
             @Html.DisplayNameFor(model => model.Image)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.Image)
+            @*@Html.DisplayFor(model => model.Image)*@
+            <img src="@Html.DisplayFor(model => model.Image)" />
         </dd>
 
     </dl>

@@ -3,7 +3,7 @@ namespace DarkSoulsSite.DbContext.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Final2 : DbMigration
+    public partial class Final : DbMigration
     {
         public override void Up()
         {

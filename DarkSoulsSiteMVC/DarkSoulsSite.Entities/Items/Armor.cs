@@ -12,9 +12,13 @@ namespace DarkSoulsSite.Entities.Items
     public class Armor : BaseEntity
     {
         [Required]
+        [Display(Name = "Base Armor")]
         public int BaseArmor { get; set; }
+        [Display(Name = "Fire Defense")]
         public int FireDefense { get; set; }
+        [Display(Name = "Ice Defense")]
         public int IceDefense { get; set; }
+        [Display(Name = "Lightning Defense")]
         public int LightningDefense { get; set; }
 
         public Armor()

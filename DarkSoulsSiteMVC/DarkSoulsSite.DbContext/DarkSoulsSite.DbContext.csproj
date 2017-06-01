@@ -75,9 +75,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201705312227238_Final2.cs" />
-    <Compile Include="Migrations\201705312227238_Final2.Designer.cs">
-      <DependentUpon>201705312227238_Final2.cs</DependentUpon>
+    <Compile Include="Migrations\201706011609332_Final.cs" />
+    <Compile Include="Migrations\201706011609332_Final.Designer.cs">
+      <DependentUpon>201706011609332_Final.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Initializer.cs" />
@@ -88,14 +88,18 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\DarkSoulsSite.Common\DarkSoulsSite.Common.csproj">
+      <Project>{5FE73B27-1E5E-46CB-8CF7-A5AFE66ACEBE}</Project>
+      <Name>DarkSoulsSite.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\DarkSoulsSite.Entities\DarkSoulsSite.Entities.csproj">
       <Project>{2d911781-68e5-4c15-9764-b19ab41e2c98}</Project>
       <Name>DarkSoulsSite.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201705312227238_Final2.resx">
-      <DependentUpon>201705312227238_Final2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706011609332_Final.resx">
+      <DependentUpon>201706011609332_Final.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

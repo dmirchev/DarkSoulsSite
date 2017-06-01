@@ -12,6 +12,7 @@ namespace DarkSoulsSite.Entities.Items
     public class Magic : BaseEntity
     {
         [Required]
+        [Display(Name = "Base Magic")]
         public int BaseMagic { get; set; }
         public int Fire { get; set; }
         public int Ice { get; set; }

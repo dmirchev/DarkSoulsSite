@@ -12,6 +12,7 @@ namespace DarkSoulsSite.Entities.Items
     public class Weapon : BaseEntity
     {
         [Required]
+        [Display(Name = "Base Damage")]
         public int BaseDamage { get; set; }
         public bool Bleed { get; set; }
         public bool Poison { get; set; }

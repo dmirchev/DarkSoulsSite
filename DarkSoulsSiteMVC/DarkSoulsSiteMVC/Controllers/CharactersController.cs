@@ -21,7 +21,9 @@ namespace DarkSoulsSiteMVC.Controllers
         // GET: Characters
         public ActionResult Index()
         {
-            var characters = db.Characters.Include(c => c.Armor).Include(c => c.Magic).Include(c => c.User).Include(c => c.Weapon);
+            var user = User.Identity.GetUserId();
+
+            var characters = db.Characters.Where(m => m.UserId == user).Include(c => c.Armor).Include(c => c.Magic).Include(c => c.User).Include(c => c.Weapon);
             return View(characters.ToList());
         }
 

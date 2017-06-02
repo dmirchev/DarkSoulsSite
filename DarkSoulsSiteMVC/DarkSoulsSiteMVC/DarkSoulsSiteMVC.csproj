@@ -189,6 +189,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\BossesController.cs" />
     <Compile Include="Controllers\CharactersController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ItemControllers\ArmorsController.cs" />
@@ -196,6 +197,7 @@
     <Compile Include="Controllers\ItemControllers\WeaponsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="DTOs\ArmorEntry.cs" />
+    <Compile Include="DTOs\BossEntry.cs" />
     <Compile Include="DTOs\CharacterEntry.cs" />
     <Compile Include="DTOs\MagicEntry.cs" />
     <Compile Include="DTOs\WeaponEntry.cs" />
@@ -287,6 +289,11 @@
     <Content Include="Views\Magics\Details.cshtml" />
     <Content Include="Views\Magics\Edit.cshtml" />
     <Content Include="Views\Magics\Index.cshtml" />
+    <Content Include="Views\Bosses\Create.cshtml" />
+    <Content Include="Views\Bosses\Delete.cshtml" />
+    <Content Include="Views\Bosses\Details.cshtml" />
+    <Content Include="Views\Bosses\Edit.cshtml" />
+    <Content Include="Views\Bosses\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

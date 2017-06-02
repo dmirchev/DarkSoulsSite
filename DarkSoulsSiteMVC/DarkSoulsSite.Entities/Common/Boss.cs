@@ -11,14 +11,21 @@ namespace DarkSoulsSite.Entities.Common
     public class Boss : BaseEntity
     {
         [Required]
+        [Display(Name = "Base Damage")]
         public int BaseDamage { get; set; }
         [Required]
+        [Display(Name = "Base Armor")]
         public int BaseArmor { get; set; }
+        [Display(Name = "Fire Defense")]
         public int FireDefense { get; set; }
+        [Display(Name = "Ice Defense")]
         public int IceDefense { get; set; }
+        [Display(Name = "Lightning Defense")]
         public int LightningDefense { get; set; }
+        [Display(Name = "Bleed Defence")]
         public bool BleedDefence { get; set; }
-        public bool BleedPoison { get; set; }
+        [Display(Name = "Poison Defence")]
+        public bool PoisonDefence { get; set; }
         public string Reward { get; set; }
         public int Rating { get; set; }
 
@@ -37,6 +44,8 @@ namespace DarkSoulsSite.Entities.Common
             this.FireDefense = fireDefense;
             this.IceDefense = iceDefense;
             this.LightningDefense = lightningDefense;
+            this.BleedDefence = bleedDefense;
+            this.PoisonDefence = poisonDefense;
             this.Reward = reward;
             this.Rating = rating;
         }

@@ -25,8 +25,27 @@ namespace DarkSoulsSite.DbContext.Migrations
                 Initializer.SeedUser(context);
             }
 
+            Initializer.SeedItems(context);
+
+            //if (!context.Users.Any())
+            //{
+            //    Initializer.SeedWeapon(context);
+            //}
+
+            //if (!context.Users.Any())
+            //{
+            //    Initializer.SeedArmor(context);
+            //}
+
+            //if (!context.Users.Any())
+            //{
+            //    Initializer.SeedMagic(context);
+            //}
+
+
+
             //Initializer.SeedCharacters(context);
-            //Initializer.SeedItems(context);
+
             //Initializer.SeedBosses(context);
         }
     }

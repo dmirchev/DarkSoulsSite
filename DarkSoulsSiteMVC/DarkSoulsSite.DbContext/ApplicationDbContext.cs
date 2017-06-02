@@ -19,7 +19,7 @@ namespace DarkSoulsSite.DbContext
         public virtual IDbSet<Weapon> Weapons { get; set; }
         public virtual IDbSet<Armor> Armors { get; set; }
         public virtual IDbSet<Magic> Magics { get; set; }
-        public virtual IDbSet<Boss> Bosss { get; set; }
+        public virtual IDbSet<Boss> Bossеs { get; set; }
 
         public ApplicationDbContext()
             //: base("DarkSoulsSiteConnection", throwIfV1Schema: false)

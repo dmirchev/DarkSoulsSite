@@ -3,7 +3,7 @@ namespace DarkSoulsSite.DbContext.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Final : DbMigration
+    public partial class BossFixedAndSeed : DbMigration
     {
         public override void Up()
         {
@@ -33,7 +33,7 @@ namespace DarkSoulsSite.DbContext.Migrations
                         IceDefense = c.Int(nullable: false),
                         LightningDefense = c.Int(nullable: false),
                         BleedDefence = c.Boolean(nullable: false),
-                        BleedPoison = c.Boolean(nullable: false),
+                        PoisonDefence = c.Boolean(nullable: false),
                         Reward = c.String(),
                         Rating = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 255),

@@ -6,23 +6,34 @@ using System.Web;
 
 namespace DarkSoulsSiteMVC.DTOs
 {
-    public class ArmorEntry
+    public class BossEntry
     {
+        [Required]
+        [Display(Name = "Base Damage")]
+        public int BaseDamage { get; set; }
+
         [Required]
         [Display(Name = "Base Armor")]
         public int BaseArmor { get; set; }
 
-        [Required]
         [Display(Name = "Fire Defense")]
         public int FireDefense { get; set; }
 
-        [Required]
         [Display(Name = "Ice Defense")]
         public int IceDefense { get; set; }
 
-        [Required]
         [Display(Name = "Lightning Defense")]
         public int LightningDefense { get; set; }
+
+        [Display(Name = "Bleed Defence")]
+        public bool BleedDefence { get; set; }
+
+        [Display(Name = "Poison Defence")]
+        public bool PoisonDefence { get; set; }
+
+        public string Reward { get; set; }
+
+        public int Rating { get; set; }
 
         [Required]
         public string Name { get; set; }

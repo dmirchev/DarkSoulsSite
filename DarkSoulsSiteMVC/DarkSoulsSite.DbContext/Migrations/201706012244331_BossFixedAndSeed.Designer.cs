@@ -7,13 +7,13 @@ namespace DarkSoulsSite.DbContext.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Final : IMigrationMetadata
+    public sealed partial class BossFixedAndSeed : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Final));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(BossFixedAndSeed));
         
         string IMigrationMetadata.Id
         {
-            get { return "201706011609332_Final"; }
+            get { return "201706012244331_BossFixedAndSeed"; }
         }
         
         string IMigrationMetadata.Source

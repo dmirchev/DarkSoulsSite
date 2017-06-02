@@ -27,7 +27,7 @@ namespace DarkSoulsSiteMVC.DTOs
         [Required]
         public int Level { get; set; }
 
-        [Required]
+        //[Required]
         public string Image { get; set; }
     }
 }

@@ -14,64 +14,88 @@
         <dt>
             @Html.DisplayNameFor(model => model.Armor.Name)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Armor.Name)
         </dd>
-
+    
         <dt>
             @Html.DisplayNameFor(model => model.Magic.Name)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Magic.Name)
         </dd>
-
+    
         <dt>
             @Html.DisplayNameFor(model => model.User.Email)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.User.Email)
         </dd>
-
+    
         <dt>
             @Html.DisplayNameFor(model => model.Weapon.Name)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Weapon.Name)
         </dd>
-
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.CharDamage)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.CharDamage)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.CharArmor)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.CharArmor)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.CharMagic)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.CharMagic)
+        </dd>
+    
         <dt>
             @Html.DisplayNameFor(model => model.Name)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Name)
         </dd>
-
+    
         <dt>
             @Html.DisplayNameFor(model => model.Level)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Level)
         </dd>
-
+    
         <dt>
             @Html.DisplayNameFor(model => model.Image)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Image)
         </dd>
-
+    
     </dl>
-
+    
     @using (Html.BeginForm()) {
         @Html.AntiForgeryToken()
-
+    
         <div class="form-actions no-color">
             <input type="submit" value="Delete" class="btn btn-default" /> |
             @Html.ActionLink("Back to List", "Index")

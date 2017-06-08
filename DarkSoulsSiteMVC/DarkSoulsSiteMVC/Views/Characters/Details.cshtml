@@ -6,6 +6,8 @@
 
 <h2>Details</h2>
 
+
+
 <div>
     <h4>Character</h4>
     <hr />
@@ -27,47 +29,97 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.Weapon)
+            @Html.DisplayNameFor(model => model.Armor.Name)
         </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.Weapon.Name)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.Armor)
-        </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Armor.Name)
         </dd>
-
+    
         <dt>
-            @Html.DisplayNameFor(model => model.Magic)
+            @Html.DisplayNameFor(model => model.Magic.Name)
         </dt>
-
+    
         <dd>
             @Html.DisplayFor(model => model.Magic.Name)
         </dd>
-
-        @*<dt>
+    
+        <dt>
             @Html.DisplayNameFor(model => model.User.Email)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.Weapon.Name)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.Weapon.Name)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.CharDamage)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.CharDamage)
+        </dd>
+
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.CharArmor)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.CharArmor)
+        </dd>
+    
+        <dt>
+            @Html.DisplayNameFor(model => model.CharMagic)
+        </dt>
+    
+        <dd>
+            @Html.DisplayFor(model => model.CharMagic)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FinalDamage)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.User.Email)
-        </dd>*@
+            @Html.DisplayFor(model => model.FinalDamage)
+        </dd>
 
+        <dt>
+            @Html.DisplayNameFor(model => model.FinalArmor)
+        </dt>
 
+        <dd>
+            @Html.DisplayFor(model => model.FinalArmor)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FinalMagic)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FinalMagic)
+        </dd>
+    
+        
+    
         <dt>
             @Html.DisplayNameFor(model => model.Image)
         </dt>
-
+    
         <dd>
             @*@Html.DisplayFor(model => model.Image)*@
             <img src="@Html.DisplayFor(model => model.Image)" />
         </dd>
-
+    
     </dl>
 </div>
 <p>

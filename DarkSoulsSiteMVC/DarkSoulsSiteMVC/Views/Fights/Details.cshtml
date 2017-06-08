@@ -1,0 +1,58 @@
+﻿@model DarkSoulsSite.Entities.Functions.Fight
+
+@{
+    //Layout = null;
+}
+
+@*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>*@
+    <div>
+        <h4>Fight</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Boss)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Boss)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Character)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Character)
+            </dd>
+
+            @*<dt>
+                @Html.DisplayNameFor(model => model.Character.Level)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Character.Level)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Character.Weapon.Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Character.Weapon.Name)
+            </dd>*@
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+@*</body>
+</html>*@

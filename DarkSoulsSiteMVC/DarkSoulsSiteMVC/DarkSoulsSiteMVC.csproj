@@ -191,14 +191,17 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\BossesController.cs" />
     <Compile Include="Controllers\CharactersController.cs" />
+    <Compile Include="Controllers\FunctionControllers\FightsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ItemControllers\ArmorsController.cs" />
     <Compile Include="Controllers\ItemControllers\MagicsController.cs" />
     <Compile Include="Controllers\ItemControllers\WeaponsController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\UsersRolesController.cs" />
     <Compile Include="DTOs\ArmorEntry.cs" />
     <Compile Include="DTOs\BossEntry.cs" />
     <Compile Include="DTOs\CharacterEntry.cs" />
+    <Compile Include="DTOs\FightEntry.cs" />
     <Compile Include="DTOs\MagicEntry.cs" />
     <Compile Include="DTOs\WeaponEntry.cs" />
     <Compile Include="Entity\BaseItems.cs" />
@@ -269,11 +272,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Characters\Create.cshtml" />
-    <Content Include="Views\Characters\Delete.cshtml" />
-    <Content Include="Views\Characters\Details.cshtml" />
-    <Content Include="Views\Characters\Edit.cshtml" />
-    <Content Include="Views\Characters\Index.cshtml" />
     <Content Include="Views\Armors\Create.cshtml" />
     <Content Include="Views\Armors\Delete.cshtml" />
     <Content Include="Views\Armors\Details.cshtml" />
@@ -294,6 +292,16 @@
     <Content Include="Views\Bosses\Details.cshtml" />
     <Content Include="Views\Bosses\Edit.cshtml" />
     <Content Include="Views\Bosses\Index.cshtml" />
+    <Content Include="Views\Fights\Create.cshtml" />
+    <Content Include="Views\Fights\Delete.cshtml" />
+    <Content Include="Views\Fights\Details.cshtml" />
+    <Content Include="Views\Fights\Edit.cshtml" />
+    <Content Include="Views\Fights\Index.cshtml" />
+    <Content Include="Views\Characters\Create.cshtml" />
+    <Content Include="Views\Characters\Delete.cshtml" />
+    <Content Include="Views\Characters\Details.cshtml" />
+    <Content Include="Views\Characters\Edit.cshtml" />
+    <Content Include="Views\Characters\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

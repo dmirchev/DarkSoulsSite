@@ -75,9 +75,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
-    <Compile Include="Migrations\201706012244331_BossFixedAndSeed.cs" />
-    <Compile Include="Migrations\201706012244331_BossFixedAndSeed.Designer.cs">
-      <DependentUpon>201706012244331_BossFixedAndSeed.cs</DependentUpon>
+    <Compile Include="Migrations\201706081838384_FixedBaseStats.cs" />
+    <Compile Include="Migrations\201706081838384_FixedBaseStats.Designer.cs">
+      <DependentUpon>201706081838384_FixedBaseStats.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201706082113483_finalStats.cs" />
+    <Compile Include="Migrations\201706082113483_finalStats.Designer.cs">
+      <DependentUpon>201706082113483_finalStats.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Initializer.cs" />
@@ -98,8 +102,11 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706012244331_BossFixedAndSeed.resx">
-      <DependentUpon>201706012244331_BossFixedAndSeed.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706081838384_FixedBaseStats.resx">
+      <DependentUpon>201706081838384_FixedBaseStats.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201706082113483_finalStats.resx">
+      <DependentUpon>201706082113483_finalStats.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

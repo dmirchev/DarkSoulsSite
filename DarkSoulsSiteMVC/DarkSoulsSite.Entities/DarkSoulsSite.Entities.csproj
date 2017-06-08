@@ -77,7 +77,9 @@
     <Compile Include="Common\BaseEntity.cs" />
     <Compile Include="Common\Boss.cs" />
     <Compile Include="Common\Character.cs" />
+    <Compile Include="Common\UserRole.cs" />
     <Compile Include="DarkSouls.cs" />
+    <Compile Include="Functions\Fight.cs" />
     <Compile Include="Items\Armor.cs" />
     <Compile Include="Items\Magic.cs" />
     <Compile Include="Items\Weapon.cs" />

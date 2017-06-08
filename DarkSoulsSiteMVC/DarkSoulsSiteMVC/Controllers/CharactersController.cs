@@ -10,6 +10,7 @@ using DarkSoulsSite.DbContext;
 using DarkSoulsSite.Entities.Common;
 using DarkSoulsSiteMVC.DTOs;
 using Microsoft.AspNet.Identity;
+using DarkSoulsSite.Entities.Items;
 
 namespace DarkSoulsSiteMVC.Controllers
 {
@@ -34,7 +35,11 @@ namespace DarkSoulsSiteMVC.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             Character character = db.Characters.Find(id);
+
+            
+
             if (character == null)
             {
                 return HttpNotFound();
@@ -63,8 +68,18 @@ namespace DarkSoulsSiteMVC.Controllers
             {
                 var userId = User.Identity.GetUserId();
 
-                Character character = new Character(userId, entry.WeaponId, entry.ArmorId, entry.MagicId, 
+                Character character = new Character(userId, entry.CharDamage, entry.CharArmor, entry.CharMagic,
+                    entry.WeaponId, entry.ArmorId, entry.MagicId,
+                    entry.FinalDamage, entry.FinalArmor, entry.FinalMagic,
                     entry.Name, entry.Level, entry.Image, null);
+
+                Weapon weapon = db.Weapons.Find(character.WeaponId);
+                Armor armor = db.Armors.Find(character.ArmorId);
+                Magic magic = db.Magics.Find(character.MagicId);
+
+                character.FinalDamage = character.CharDamage + weapon.BaseDamage;
+                character.FinalArmor = character.CharArmor + armor.BaseArmor;
+                character.FinalMagic = character.CharMagic + magic.BaseMagic;
 
                 db.Characters.Add(character);
                 db.SaveChanges();
@@ -102,7 +117,11 @@ namespace DarkSoulsSiteMVC.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,UserId,WeaponId,ArmorId,MagicId,Name,Level,Image")] Character character)
+        public ActionResult Edit([Bind(Include = "Id,UserId," +
+            "CharDamage,CharArmor,CharMagic," +
+            "WeaponId,ArmorId,MagicId," +
+            "FinalDamage,FinalArmor,FinalMagic" +
+            ",Name,Level,Image")] Character character)
         {
             if (ModelState.IsValid)
             {
@@ -110,9 +129,10 @@ namespace DarkSoulsSiteMVC.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+
             ViewBag.ArmorId = new SelectList(db.Armors, "Id", "Name", character.ArmorId);
             ViewBag.MagicId = new SelectList(db.Magics, "Id", "Name", character.MagicId);
-            ViewBag.UserId = new SelectList(db.Users, "Id", "Email", character.UserId);
+            //ViewBag.UserId = new SelectList(db.Users, "Id", "Email", character.UserId);
             ViewBag.WeaponId = new SelectList(db.Weapons, "Id", "Name", character.WeaponId);
             return View(character);
         }

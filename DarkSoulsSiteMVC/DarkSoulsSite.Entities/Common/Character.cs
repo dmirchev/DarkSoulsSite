@@ -16,6 +16,18 @@ namespace DarkSoulsSite.Entities.Common
         public virtual User User { get; set; }
 
         [Required]
+        [Display(Name = "Character Base Damage")]
+        public int CharDamage { get; set; }
+
+        [Required]
+        [Display(Name = "Character Base Armor")]
+        public int CharArmor { get; set; }
+
+        [Required]
+        [Display(Name = "Character Base Magic")]
+        public int CharMagic { get; set; }
+
+        [Required]
         [Display(Name = "Weapon")]
         public string WeaponId { get; set; }
         public virtual Weapon Weapon { get; set; }
@@ -30,19 +42,33 @@ namespace DarkSoulsSite.Entities.Common
         public string MagicId { get; set; }
         public virtual Magic Magic { get; set; }
 
+        public int FinalDamage { get; set; }
+        public int FinalArmor { get; set; }
+        public int FinalMagic { get; set; }
+
         public Character()
         {
 
         }
 
-        public Character(string userid, string weaponid, string armorid, string magicid,
+        public Character(string userid, int charDamage, int charArmor, int charMagic,
+            string weaponid, string armorid, string magicid,
+            int finalDamage, int finalArmor, int finalMagic,
             string name, int level, string image, CustomId id)
             : base(name, level, image, id)
         {
             this.UserId = userid;
+            this.CharDamage = charDamage;
+            this.CharArmor = charArmor;
+            this.CharMagic = charMagic;
             this.WeaponId = weaponid;
             this.ArmorId = armorid;
             this.MagicId = magicid;
+
+            this.FinalDamage = finalDamage;
+            this.FinalArmor = finalArmor;
+            this.FinalMagic = finalMagic;
+            
         }
     }
 

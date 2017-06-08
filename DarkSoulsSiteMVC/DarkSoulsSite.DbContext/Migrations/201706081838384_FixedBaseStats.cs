@@ -3,7 +3,7 @@ namespace DarkSoulsSite.DbContext.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class BossFixedAndSeed : DbMigration
+    public partial class FixedBaseStats : DbMigration
     {
         public override void Up()
         {
@@ -48,6 +48,9 @@ namespace DarkSoulsSite.DbContext.Migrations
                     {
                         Id = c.String(nullable: false, maxLength: 128),
                         UserId = c.String(nullable: false, maxLength: 128),
+                        CharDamage = c.Int(nullable: false),
+                        CharArmor = c.Int(nullable: false),
+                        CharMagic = c.Int(nullable: false),
                         WeaponId = c.String(nullable: false, maxLength: 128),
                         ArmorId = c.String(nullable: false, maxLength: 128),
                         MagicId = c.String(nullable: false, maxLength: 128),
@@ -153,6 +156,20 @@ namespace DarkSoulsSite.DbContext.Migrations
                 .PrimaryKey(t => t.Id);
             
             CreateTable(
+                "dbo.Fights",
+                c => new
+                    {
+                        Id = c.String(nullable: false, maxLength: 128),
+                        CharacterId = c.String(maxLength: 128),
+                        BossId = c.String(maxLength: 128),
+                    })
+                .PrimaryKey(t => t.Id)
+                .ForeignKey("dbo.Bosses", t => t.BossId)
+                .ForeignKey("dbo.Characters", t => t.CharacterId)
+                .Index(t => t.CharacterId)
+                .Index(t => t.BossId);
+            
+            CreateTable(
                 "dbo.AspNetRoles",
                 c => new
                     {
@@ -167,6 +184,8 @@ namespace DarkSoulsSite.DbContext.Migrations
         public override void Down()
         {
             DropForeignKey("dbo.AspNetUserRoles", "RoleId", "dbo.AspNetRoles");
+            DropForeignKey("dbo.Fights", "CharacterId", "dbo.Characters");
+            DropForeignKey("dbo.Fights", "BossId", "dbo.Bosses");
             DropForeignKey("dbo.Characters", "WeaponId", "dbo.Weapons");
             DropForeignKey("dbo.Characters", "UserId", "dbo.AspNetUsers");
             DropForeignKey("dbo.AspNetUserRoles", "UserId", "dbo.AspNetUsers");
@@ -175,6 +194,8 @@ namespace DarkSoulsSite.DbContext.Migrations
             DropForeignKey("dbo.Characters", "MagicId", "dbo.Magics");
             DropForeignKey("dbo.Characters", "ArmorId", "dbo.Armors");
             DropIndex("dbo.AspNetRoles", "RoleNameIndex");
+            DropIndex("dbo.Fights", new[] { "BossId" });
+            DropIndex("dbo.Fights", new[] { "CharacterId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "RoleId" });
             DropIndex("dbo.AspNetUserRoles", new[] { "UserId" });
             DropIndex("dbo.AspNetUserLogins", new[] { "UserId" });
@@ -185,6 +206,7 @@ namespace DarkSoulsSite.DbContext.Migrations
             DropIndex("dbo.Characters", new[] { "WeaponId" });
             DropIndex("dbo.Characters", new[] { "UserId" });
             DropTable("dbo.AspNetRoles");
+            DropTable("dbo.Fights");
             DropTable("dbo.Weapons");
             DropTable("dbo.AspNetUserRoles");
             DropTable("dbo.AspNetUserLogins");

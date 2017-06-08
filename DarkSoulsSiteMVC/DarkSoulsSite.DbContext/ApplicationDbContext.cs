@@ -20,6 +20,7 @@ namespace DarkSoulsSite.DbContext
         public virtual IDbSet<Armor> Armors { get; set; }
         public virtual IDbSet<Magic> Magics { get; set; }
         public virtual IDbSet<Boss> Bossеs { get; set; }
+        //public virtual IDbSet<IdentityUserRole> Roles { get; set; }
 
         public ApplicationDbContext()
             //: base("DarkSoulsSiteConnection", throwIfV1Schema: false)
@@ -32,5 +33,9 @@ namespace DarkSoulsSite.DbContext
         {
             return new ApplicationDbContext();
         }
+
+        public System.Data.Entity.DbSet<DarkSoulsSite.Entities.Functions.Fight> Fights { get; set; }
+
+        //public System.Data.Entity.DbSet<DarkSoulsSite.Entities.Common.Boss> Bosses { get; set; }
     }
 }

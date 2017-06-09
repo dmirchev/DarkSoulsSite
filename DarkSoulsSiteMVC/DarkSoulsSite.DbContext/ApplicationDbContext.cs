@@ -23,8 +23,8 @@ namespace DarkSoulsSite.DbContext
         //public virtual IDbSet<IdentityUserRole> Roles { get; set; }
 
         public ApplicationDbContext()
-            //: base("DarkSoulsSiteConnection", throwIfV1Schema: false)
-            : base("DarkSoulsSite-DevConnection", throwIfV1Schema: false)
+            : base("DarkSoulsSiteConnection", throwIfV1Schema: false)
+            //: base("DarkSoulsSite-DevConnection", throwIfV1Schema: false)
         {
             //Database.SetInitializer(new MigrateDatabaseToLatestVersion<ApplicationDbContext, Configuration>());
         }

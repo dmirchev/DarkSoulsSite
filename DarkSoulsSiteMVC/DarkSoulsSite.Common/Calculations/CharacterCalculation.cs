@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace DarkSoulsSite.Common.Calculations
 {
-    class CharacterCalculation
+    public class CharacterCalculation
     {
+
     }
 }

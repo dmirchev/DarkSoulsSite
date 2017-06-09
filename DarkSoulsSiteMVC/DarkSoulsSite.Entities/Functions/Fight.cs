@@ -20,16 +20,22 @@ namespace DarkSoulsSite.Entities.Functions
         public string BossId { get; set; }
         public virtual Boss Boss { get; set; }
 
+        public int CharacterPoints { get; set; }
+        public int BossPoints { get; set; }
+
         public Fight()
         {
 
         }
 
-        public Fight(string characterId, string bossId, CustomId id = null)
+        public Fight(string characterId, string bossId,
+            int characterPoints, int bossPoints, CustomId id = null)
             : this(id)
         {
             this.CharacterId = characterId;
             this.BossId = bossId;
+            this.CharacterPoints = characterPoints;
+            this.BossPoints = bossPoints;
         }
 
         public Fight(CustomId id)

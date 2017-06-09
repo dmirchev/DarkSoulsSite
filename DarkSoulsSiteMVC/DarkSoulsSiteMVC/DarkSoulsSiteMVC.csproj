@@ -216,15 +216,37 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Site.css" />
+    <Content Include="Styles\styleRes.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
+    <Content Include="img\Back.png" />
+    <Content Include="img\BonFire\Bonfire3.png" />
+    <Content Include="img\Borders\Border.png" />
+    <Content Include="img\Borders\Border4.png" />
+    <Content Include="img\Borders\Down.png" />
+    <Content Include="img\Bosses\1.jpg" />
+    <Content Include="img\Bosses\2.jpg" />
+    <Content Include="img\Bosses\3.jpg" />
+    <Content Include="img\Bosses\4.jpg" />
+    <Content Include="img\Line.png" />
+    <Content Include="img\LineLong.png" />
+    <Content Include="img\NavBack.png" />
+    <Content Include="img\Pillars\BottomPillar.png" />
+    <Content Include="img\Pillars\MiddlePillar.png" />
+    <Content Include="img\Pillars\TopPillar.png" />
+    <Content Include="img\stars\SEmpty.png" />
+    <Content Include="img\stars\SFill.png" />
+    <Content Include="img\Title.png" />
+    <Content Include="img\you-died.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="fonts\OptimusPrinceps.ttf" />
+    <Content Include="img\stars\Thumbs.db" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -302,6 +324,7 @@
     <Content Include="Views\Characters\Details.cshtml" />
     <Content Include="Views\Characters\Edit.cshtml" />
     <Content Include="Views\Characters\Index.cshtml" />
+    <Content Include="Views\Fights\Fight.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

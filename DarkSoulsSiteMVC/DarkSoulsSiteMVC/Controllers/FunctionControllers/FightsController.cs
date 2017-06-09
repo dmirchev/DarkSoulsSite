@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using DarkSoulsSite.DbContext;
+using DarkSoulsSite.DbContext.Calculations;
 using DarkSoulsSite.Entities.Functions;
 using Microsoft.AspNet.Identity;
 using DarkSoulsSiteMVC.DTOs;
@@ -24,6 +25,30 @@ namespace DarkSoulsSiteMVC.Controllers.FunctionControllers
             return View(fights.ToList());
         }
 
+        public ActionResult Fight(string id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+
+            Fight fight = db.Fights.Find(id);
+
+            FightPointsCalculation Calc = new FightPointsCalculation();
+            Calc.FightPoints(fight);
+
+            db.Entry(fight).State = EntityState.Modified;
+            //db.Fights.Add(fight);
+            db.SaveChanges();
+
+            if (fight == null)
+            {
+                return HttpNotFound();
+            }
+            return View(fight);
+
+        }
+
         // GET: Fights/Details/5
         public ActionResult Details(string id)
         {
@@ -31,7 +56,10 @@ namespace DarkSoulsSiteMVC.Controllers.FunctionControllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
+
             Fight fight = db.Fights.Find(id);
+
+
             if (fight == null)
             {
                 return HttpNotFound();
@@ -60,7 +88,9 @@ namespace DarkSoulsSiteMVC.Controllers.FunctionControllers
 
             if (ModelState.IsValid)
             {
-                Fight fight = new Fight(entry.CharacterId, entry.BossId, null);
+                Fight fight = new Fight(entry.CharacterId, entry.BossId,entry.CharacterPoints, entry.CharacterPoints, null);
+
+                
 
                 db.Fights.Add(fight);
                 db.SaveChanges();

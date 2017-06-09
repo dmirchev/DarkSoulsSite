@@ -1,5 +1,6 @@
 ﻿using DarkSoulsSite.Common.Extensions;
 using DarkSoulsSite.Entities;
+using DarkSoulsSite.Entities.Common;
 using DarkSoulsSite.Entities.Items;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
@@ -38,10 +39,29 @@ namespace DarkSoulsSite.DbContext.Migrations
 
         internal static void SeedItems(ApplicationDbContext context)
         {
+            var bos = new Boss
+            {
+                Name = "bos",
+                Level = 155,
+                BaseDamage = 90,
+                BaseArmor = 90,
+                FireDefense = 90,
+                IceDefense = 90,
+                LightningDefense = 90,
+                BleedDefence = true,
+                PoisonDefence = true,
+                Reward = "No Reward",
+                Rating = 2,
+                Image = "https://" +
+               "vignette1.wikia.nocookie.net/warframe/images/0/03/" +
+               "LatoPrimePistolHI.png/revision/latest?cb=20130406033121",
+                Id = new CustomId().ToString()
+
+            };
             var ar = new Armor
             {
                 Name = "ar",
-                Level = 15,
+                Level = 155,
                 BaseArmor = 60,
                 FireDefense = 50,
                 IceDefense = 40,

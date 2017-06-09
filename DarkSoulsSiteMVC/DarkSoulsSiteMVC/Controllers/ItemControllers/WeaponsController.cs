@@ -31,6 +31,7 @@ namespace DarkSoulsSiteMVC.Controllers.ItemControllers
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
             Weapon weapon = db.Weapons.Find(id);
+          
             if (weapon == null)
             {
                 return HttpNotFound();

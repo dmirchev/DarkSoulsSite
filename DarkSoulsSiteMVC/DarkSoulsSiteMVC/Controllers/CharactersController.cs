@@ -11,6 +11,7 @@ using DarkSoulsSite.Entities.Common;
 using DarkSoulsSiteMVC.DTOs;
 using Microsoft.AspNet.Identity;
 using DarkSoulsSite.Entities.Items;
+using System.IO;
 
 namespace DarkSoulsSiteMVC.Controllers
 {

@@ -3,7 +3,7 @@ namespace DarkSoulsSite.DbContext.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class FixedBaseStats : DbMigration
+    public partial class Final : DbMigration
     {
         public override void Up()
         {
@@ -54,6 +54,9 @@ namespace DarkSoulsSite.DbContext.Migrations
                         WeaponId = c.String(nullable: false, maxLength: 128),
                         ArmorId = c.String(nullable: false, maxLength: 128),
                         MagicId = c.String(nullable: false, maxLength: 128),
+                        FinalDamage = c.Int(nullable: false),
+                        FinalArmor = c.Int(nullable: false),
+                        FinalMagic = c.Int(nullable: false),
                         Name = c.String(nullable: false, maxLength: 255),
                         Level = c.Int(nullable: false),
                         Image = c.String(nullable: false),
@@ -162,6 +165,8 @@ namespace DarkSoulsSite.DbContext.Migrations
                         Id = c.String(nullable: false, maxLength: 128),
                         CharacterId = c.String(maxLength: 128),
                         BossId = c.String(maxLength: 128),
+                        CharacterPoints = c.Int(nullable: false),
+                        BossPoints = c.Int(nullable: false),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Bosses", t => t.BossId)

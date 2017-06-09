@@ -1,0 +1,478 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#wrapper {
+    background-color: black;
+}
+
+#head {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+a:link {
+    font-family: 'OptimusPrinceps';
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.linkButtons {
+    font-family: 'OptimusPrinceps';
+    color: white;
+    background-image: url(../img/Borders/Down.png);
+    margin-bottom: 20px;
+    padding: 2%;
+    text-align: center;
+    width: 10%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+
+}
+
+.linkButtons a {
+    display: inline-block;
+    padding: 2px;
+}
+
+#logoimg {
+    width: 10%;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#titleimg {
+    padding-left: 12px;
+    padding-right: 12px;
+    width: 68%;
+    height: 140px;
+}
+
+#loginform {
+    width: 600px;
+}
+
+#smallLog {
+    height: 10px;
+    width: 90%;
+}
+
+#in {
+    width: 100%;
+}
+
+#log {
+    height: 20px;
+    width: 100%;
+}
+
+#BorderLog {
+    color: white;
+    border: 30px;
+    border-image: url(../img/Borders/Border.png) 100 round;
+    border-style: solid;
+    width: 12%;
+    display: inline-block;
+}
+
+#BorderLog h1 {
+    font-size: 20px;
+}
+
+#BorderLog input {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+#BorderLog a {
+    font-size: 18px;
+    color: white;
+}
+
+#BorderPic {
+    color: white;
+    border: 10px;
+    border-image: url(../img/Borders/Border4.png) 60 round;
+    border-style: solid;
+    width: 35%;
+}
+
+BorderDetail {
+    color: white;
+    border: 30px;
+    border-image: url(../img/Borders/Border.png) 100 round;
+    border-style: solid;
+    width: 90%;
+}
+
+.crud {
+    font-family: 'OptimusPrinceps';
+    color: white;
+    background-image: url(../img/Borders/Down.png);
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+}
+
+.crud div {
+    font-family: 'OptimusPrinceps';
+    color: white;
+    font-size: 20px;
+    padding: 1%;
+}
+
+.crud a {
+    display: inline-block;
+    padding-bottom: 2px;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+#info {
+    font-family: 'OptimusPrinceps';
+    color: white;
+    background-image: url(../img/Borders/Down.png);
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 100px;
+}
+
+#push {
+    padding-top: 10px;
+}
+
+nav {
+    background-image: url(../img/NavBack.png)
+}
+
+#nav-list {
+    text-align: center;
+}
+
+    #nav-list li {
+        display: inline-block;
+        font-family: 'OptimusPrinceps';
+        color: white;
+        font-size: 30px;
+        margin: 10px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+#nav-list li a {
+    text-decoration: none;
+    color: white;
+}
+
+#main {
+    color: white;
+}
+
+aside {
+    color: white;
+    border: 4px solid;
+    border-left: none;
+}
+
+section {
+    display: inline-block;
+    position: relative
+}
+
+#sth {
+    float: right;
+}
+
+#TheSun {
+    width: 400px;
+    padding-left: 500px;
+}
+
+article {
+    margin: 50px;
+    border: 5px solid gray;
+    font-size: 20px;
+}
+
+p {
+    color: white;
+}
+
+.line {
+    width: 100%;
+    height: 10px;
+    background-image: url(../img/LineLong.png);
+}
+
+#TopPillars {
+    background-image: url(../img/Pillars/TopPillar.png), url(../img/Pillars/TopPillar.png);
+    background-size: 100px;
+    width: 100%;
+    height: 70px;
+    background-position: 5% top, 95% top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#MiddlePillars {
+    background-image: url(../img/Pillars/MiddlePillar.png), url(../img/Pillars/MiddlePillar.png);
+    background-size: 100px;
+    width: 100%;
+    height: 1000px;
+    background-position: 5%, 95%;
+    background-repeat: repeat-y, repeat-y;
+}
+
+#MiddlePillarsReg {
+    background-image: url(../img/Pillars/MiddlePillar.png), url(../img/Pillars/MiddlePillar.png);
+    background-size: 100px;
+    width: 100%;
+    height: 1000px;
+    background-position: 5%, 95%;
+    background-repeat: repeat-y, repeat-y;
+}
+
+#BottomPillars {
+    background-image: url(../img/Pillars/BottomPillar.png), url(../img/Pillars/BottomPillar.png);
+    background-size: 100px;
+    width: 100%;
+    height: 70px;
+    background-position: 5% top, 95% top;
+    background-repeat: no-repeat, no-repeat;
+}
+
+#Border {
+    color: white;
+    border: 30px;
+    border-image: url(../img/Borders/Border.png) 100 round;
+    border-style: solid;
+    padding: 15px;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+form {
+    font-family: 'OptimusPrinceps';
+    width: 100%;
+}
+
+#Border2 {
+    color: white;
+    border: 30px;
+    border-image: url(../img/Borders/Border.png) 100 round;
+    border-style: solid;
+    padding: 15px;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#bosses {
+    margin-left: 15%;
+    margin-right: 15%;
+    width: 70%;
+    position: absolute;
+}
+
+.Names {
+    font-family: 'OptimusPrinceps';
+    font-size: 35px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.boss img {
+    width: 100%;
+}
+
+#Border3 {
+    color: white;
+    border: 30px;
+    border-image: url(../img/Borders/Border4.png) 60 round;
+    border-style: solid;
+}
+
+.el {
+    display: inline-block;
+    margin-left: 8%;
+    margin-right: 8%;
+    width: 33%;
+}
+
+.row {
+    margin-bottom: 10%;
+    display: block;
+    width: 100%;
+}
+
+.star {
+    background-image: url(../img/stars/SEmpty.png);
+    background-size: 22px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 22px;
+    height: 20px;
+    text-decoration: none;
+}
+
+.scoreboard {
+    font-family: 'OptimusPrinceps';
+    color: white;
+    background-image: url(../img/Borders/Down.png);
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+}
+
+    .scoreboard div {
+        display: inline-block;
+        font-family: 'OptimusPrinceps';
+        color: white;
+        font-size: 20px;
+        padding: 1%;
+    }
+
+.rating {
+    width: 100%;
+}
+
+input {
+    margin-bottom: 10px;
+}
+
+.clear {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+footer {
+    margin: 2%;
+    text-align: center;
+}
+
+@media only screen and (max-width: 960px) {
+
+    .Names {
+        font-family: 'OptimusPrinceps';
+        font-size: 23px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    #Border3 {
+        color: white;
+        border: 15px;
+        border-image: url(../img/Borders/Border4.png) 60 round;
+        border-style: solid;
+    }
+
+    #MiddlePillars {
+        background-image: url(../img/Pillars/MiddlePillar.png), url(../img/Pillars/MiddlePillar.png);
+        background-size: 100px;
+        width: 100%;
+        height: 1000px;
+        background-position: 5%, 95%;
+        background-repeat: repeat-y, repeat-y;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    .Names {
+        font-family: 'OptimusPrinceps';
+        font-size: 27px;
+        margin-left: 10%;
+        margin-right: 10%;
+        margin-bottom: 5%;
+    }
+
+    #Border3 {
+        color: white;
+        border: 5px;
+        border-image: url(../img/Borders/Border4.png) 60 round;
+        border-style: solid;
+    }
+
+    #MiddlePillars {
+        background-image: url(../img/Pillars/MiddlePillar.png), url(../img/Pillars/MiddlePillar.png);
+        background-size: 100px;
+        width: 100%;
+        height: 1000px;
+        background-position: 5%, 95%;
+        background-repeat: repeat-y, repeat-y;
+    }
+
+    .el {
+        display: block;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-bottom: 15px;
+        width: 50%;
+    }
+
+    sl {
+        width: 100%;
+        height: 10px;
+        background-image: url(../img/LineLong.png);
+    }
+}

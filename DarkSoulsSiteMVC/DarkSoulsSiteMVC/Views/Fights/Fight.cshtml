@@ -28,6 +28,8 @@
                     @Html.DisplayFor(model => model.Character.Name)
                 </dd>
 
+                <hr />
+
                 <dt>
                     @Html.DisplayNameFor(model => model.BossPoints)
                 </dt>
@@ -42,6 +44,16 @@
 
                 <dd>
                     @Html.DisplayFor(model => model.CharacterPoints)
+                </dd>
+
+                <hr />
+
+                <dt>
+                    @Html.DisplayNameFor(model => model.Result)
+                </dt>
+
+                <dd>
+                    @Html.DisplayFor(model => model.Result)
                 </dd>
 
                 @*<dt>
@@ -62,6 +74,9 @@
 
             </dl>
         </div>
+
+        <hr />
+
         <p>
             @Html.ActionLink("Back to List", "Index")
         </p>

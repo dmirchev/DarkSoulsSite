@@ -23,19 +23,22 @@ namespace DarkSoulsSite.Entities.Functions
         public int CharacterPoints { get; set; }
         public int BossPoints { get; set; }
 
+        public string Result { get; set; }
+
         public Fight()
         {
 
         }
 
         public Fight(string characterId, string bossId,
-            int characterPoints, int bossPoints, CustomId id = null)
+            int characterPoints, int bossPoints, string result, CustomId id = null)
             : this(id)
         {
             this.CharacterId = characterId;
             this.BossId = bossId;
             this.CharacterPoints = characterPoints;
             this.BossPoints = bossPoints;
+            this.Result = result;
         }
 
         public Fight(CustomId id)

@@ -88,7 +88,7 @@ namespace DarkSoulsSiteMVC.Controllers.FunctionControllers
 
             if (ModelState.IsValid)
             {
-                Fight fight = new Fight(entry.CharacterId, entry.BossId,entry.CharacterPoints, entry.CharacterPoints, null);
+                Fight fight = new Fight(entry.CharacterId, entry.BossId,entry.CharacterPoints, entry.CharacterPoints, entry.Result, null);
 
                 
 

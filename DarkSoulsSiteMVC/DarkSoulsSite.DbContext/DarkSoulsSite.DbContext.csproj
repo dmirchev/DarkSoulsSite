@@ -76,9 +76,9 @@
   <ItemGroup>
     <Compile Include="ApplicationDbContext.cs" />
     <Compile Include="Calculations\FightPointsCalculation.cs" />
-    <Compile Include="Migrations\201706090512230_Final.cs" />
-    <Compile Include="Migrations\201706090512230_Final.Designer.cs">
-      <DependentUpon>201706090512230_Final.cs</DependentUpon>
+    <Compile Include="Migrations\201706091016384_Result.cs" />
+    <Compile Include="Migrations\201706091016384_Result.Designer.cs">
+      <DependentUpon>201706091016384_Result.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\Initializer.cs" />
@@ -99,8 +99,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706090512230_Final.resx">
-      <DependentUpon>201706090512230_Final.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706091016384_Result.resx">
+      <DependentUpon>201706091016384_Result.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -14,5 +14,7 @@ namespace DarkSoulsSiteMVC.DTOs
         public int CharacterPoints { get; set; }
 
         public int BossPoints { get; set; }
+
+        public string Result { get; set; }
     }
 }

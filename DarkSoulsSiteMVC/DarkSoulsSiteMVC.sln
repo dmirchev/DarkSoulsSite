@@ -9,8 +9,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.Entities", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.Common", "DarkSoulsSite.Common\DarkSoulsSite.Common.csproj", "{5FE73B27-1E5E-46CB-8CF7-A5AFE66ACEBE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.ConsoleClient", "DarkSoulsSite.ConsoleClient\DarkSoulsSite.ConsoleClient.csproj", "{6DF60C35-D981-436D-9614-1A0096F126EB}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DarkSoulsSite.DbContext", "DarkSoulsSite.DbContext\DarkSoulsSite.DbContext.csproj", "{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}"
 EndProject
 Global
@@ -31,10 +29,6 @@ Global
 		{5FE73B27-1E5E-46CB-8CF7-A5AFE66ACEBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FE73B27-1E5E-46CB-8CF7-A5AFE66ACEBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FE73B27-1E5E-46CB-8CF7-A5AFE66ACEBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6DF60C35-D981-436D-9614-1A0096F126EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6DF60C35-D981-436D-9614-1A0096F126EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6DF60C35-D981-436D-9614-1A0096F126EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6DF60C35-D981-436D-9614-1A0096F126EB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27850587-E3D1-4A8C-BC47-4CB3749DBE5C}.Release|Any CPU.ActiveCfg = Release|Any CPU

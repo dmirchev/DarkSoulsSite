@@ -3,7 +3,7 @@ namespace DarkSoulsSite.DbContext.Migrations
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class Final : DbMigration
+    public partial class Result : DbMigration
     {
         public override void Up()
         {
@@ -167,6 +167,7 @@ namespace DarkSoulsSite.DbContext.Migrations
                         BossId = c.String(maxLength: 128),
                         CharacterPoints = c.Int(nullable: false),
                         BossPoints = c.Int(nullable: false),
+                        Result = c.String(),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Bosses", t => t.BossId)

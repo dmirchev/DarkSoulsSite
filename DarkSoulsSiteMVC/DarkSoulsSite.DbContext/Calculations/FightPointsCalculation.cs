@@ -17,7 +17,7 @@ namespace DarkSoulsSite.DbContext.Calculations
             if (fight.Character.Level > fight.Boss.Level)
             {
                 characterPoints++;
-                
+
             }
             else
             {
@@ -73,6 +73,17 @@ namespace DarkSoulsSite.DbContext.Calculations
                 {
                     bossPoints++;
                 }
+            }
+
+            if (characterPoints > bossPoints)
+            {
+                fight.Result = "Win";
+            } else if (characterPoints < bossPoints)
+            {
+                fight.Result = "Lose";
+            } else if (characterPoints == bossPoints)
+            {
+                fight.Result = "Draw";
             }
 
             fight.CharacterPoints = characterPoints;
